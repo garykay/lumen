@@ -1,6 +1,6 @@
 # Basic Lumen REST API
 
-A basic Laravel Lumen REST API
+A basic Laravel Lumen REST API using PASSPORT for auth creds
 
 ## License
 
