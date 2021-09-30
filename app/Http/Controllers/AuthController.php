@@ -26,7 +26,7 @@ class AuthController extends Controller
         try {
             return  $client->post("http://lumen.local/v1/oauth/token", [
                 "form_params" => [
-                    "client_secret" => "8DsumLL7hgD8iGJJYVm1ftuI6mI0KC2FEf4An0uF",
+                    "client_secret" => "",
                     "grant_type" => "password",
                     "client_id" => 4,
                     "username" => $request->email,
