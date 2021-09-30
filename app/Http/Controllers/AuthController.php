@@ -16,7 +16,7 @@ class AuthController extends Controller
 
         //Check if fields are not empty
 
-        if(empty($email) OR empty($password))
+        if(empty($email) or empty($password))
         {
             return response()->json(['status' => 'error', 'message' => 'Email and password are required']);
         }
@@ -24,11 +24,11 @@ class AuthController extends Controller
         $client = new Client();
 
         try {
-            return  $client->post('http://lumen.local/v1/oauth/token', [
+            return  $client->post("http://lumen.local/v1/oauth/token", [
                 "form_params" => [
-                    "client_secret" => "ybAhs2GPFt9W3QohVlt9z6MpO3DcKkdyEHDFBNPl",
+                    "client_secret" => "8DsumLL7hgD8iGJJYVm1ftuI6mI0KC2FEf4An0uF",
                     "grant_type" => "password",
-                    "client_id" =>2,
+                    "client_id" => 4,
                     "username" => $request->email,
                     "password" => $request->password
                 ]
